@@ -128,17 +128,22 @@ struct DollarTodayWidgetEntryView : View {
     var entry: DollarTodayEntry
     
     var body: some View {
-        
-        VStack {
-            Text("Fetch Count \(entry.count)")
-
-            Text(String(format: "Dolar Compra: %.2f", entry.buy))
-            Text(String(format: "Dolar Venta: %.2f",  entry.sell))
-                .font(.headline)
+        ZStack {
+            Image("dolar")
+                .padding(.bottom, 45.0)
+            VStack(alignment: .center, spacing: 0) {
+                Text(String(format: "Dólar Blue",  entry.sell))
+                    .font(.bold(.system(size: 16))())
+                    .foregroundColor(.white)
+                    .shadow(radius: 5)
+                Text(String(format: "$%.2f",  entry.sell))
+                    .font(.bold(.system(size: 36))())
+                    .foregroundColor(.white)
+                    .shadow(radius: 5)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("DarkBlue").opacity(0.4))
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.green.opacity(0.2))
-                
     }
 }
 
@@ -150,8 +155,8 @@ struct DollarTodayWidget: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             DollarTodayWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Dólarware")
+        .description("Widget que muestra la cotización del dólar.")
         .supportedFamilies([
                     .systemSmall,
                     .systemMedium,

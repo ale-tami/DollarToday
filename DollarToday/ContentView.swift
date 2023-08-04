@@ -13,7 +13,10 @@ struct ContentView: View {
     @StateObject private var viewModel = DollarWebViewModel()
     
     var body: some View {
-        WebView(html: $viewModel.blue)
+        #if os(macOS)
+            WebView(html: $viewModel.blue)
+        #endif
+        EmptyView()
     }
 }
 
@@ -30,6 +33,7 @@ final class DollarWebViewModel: ObservableObject {
   
 }
 
+#if os(macOS)
 struct WebView: View {
     @Binding var html: String
     
@@ -37,7 +41,9 @@ struct WebView: View {
         WebViewWrapper(html: html)
     }
 }
+#endif
 
+#if os(macOS)
 struct WebViewWrapper: NSViewRepresentable {
     let html: String
     
@@ -49,3 +55,4 @@ struct WebViewWrapper: NSViewRepresentable {
         nsView.loadHTMLString(html, baseURL: nil)
     }
 }
+#endif
