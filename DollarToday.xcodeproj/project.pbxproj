@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DEF873029F2C7C4007657EC /* DollarTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF872F29F2C7C4007657EC /* DollarTodayApp.swift */; };
+		4DEF873229F2C7C4007657EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF873129F2C7C4007657EC /* ContentView.swift */; };
+		4DEF873429F2C7C5007657EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEF873329F2C7C5007657EC /* Assets.xcassets */; };
+		4DEF873729F2C7C5007657EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEF873629F2C7C5007657EC /* Preview Assets.xcassets */; };
+		4DEF874529F2E0DF007657EC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEF874429F2E0DF007657EC /* WidgetKit.framework */; };
+		4DEF874729F2E0DF007657EC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEF874629F2E0DF007657EC /* SwiftUI.framework */; };
+		4DEF874A29F2E0DF007657EC /* DollarTodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF874929F2E0DF007657EC /* DollarTodayWidget.swift */; };
+		4DEF874D29F2E0E0007657EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEF874C29F2E0E0007657EC /* Assets.xcassets */; };
+		4DEF875029F2E0E0007657EC /* DollarTodayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF874B29F2E0DF007657EC /* DollarTodayWidget.intentdefinition */; };
+		4DEF875129F2E0E0007657EC /* DollarTodayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF874B29F2E0DF007657EC /* DollarTodayWidget.intentdefinition */; };
+		4DEF875429F2E0E0007657EC /* DollarTodayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4DEF874229F2E0DF007657EC /* DollarTodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DEF875229F2E0E0007657EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DEF872429F2C7C4007657EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DEF874129F2E0DF007657EC;
+			remoteInfo = DollarTodayWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DEF875829F2E0E0007657EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DEF875429F2E0E0007657EC /* DollarTodayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4DEF872C29F2C7C4007657EC /* DollarToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollarToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEF872F29F2C7C4007657EC /* DollarTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarTodayApp.swift; sourceTree = "<group>"; };
+		4DEF873129F2C7C4007657EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DEF873329F2C7C5007657EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DEF873629F2C7C5007657EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DEF873829F2C7C5007657EC /* DollarToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DollarToday.entitlements; sourceTree = "<group>"; };
+		4DEF874229F2E0DF007657EC /* DollarTodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DollarTodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEF874429F2E0DF007657EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4DEF874629F2E0DF007657EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4DEF874929F2E0DF007657EC /* DollarTodayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarTodayWidget.swift; sourceTree = "<group>"; };
+		4DEF874B29F2E0DF007657EC /* DollarTodayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DollarTodayWidget.intentdefinition; sourceTree = "<group>"; };
+		4DEF874C29F2E0E0007657EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DEF874E29F2E0E0007657EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DEF874F29F2E0E0007657EC /* DollarTodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DollarTodayWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DEF872929F2C7C4007657EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DEF873F29F2E0DF007657EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEF874729F2E0DF007657EC /* SwiftUI.framework in Frameworks */,
+				4DEF874529F2E0DF007657EC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DEF872329F2C7C4007657EC = {
+			isa = PBXGroup;
+			children = (
+				4DEF872E29F2C7C4007657EC /* DollarToday */,
+				4DEF874829F2E0DF007657EC /* DollarTodayWidget */,
+				4DEF874329F2E0DF007657EC /* Frameworks */,
+				4DEF872D29F2C7C4007657EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DEF872D29F2C7C4007657EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DEF872C29F2C7C4007657EC /* DollarToday.app */,
+				4DEF874229F2E0DF007657EC /* DollarTodayWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DEF872E29F2C7C4007657EC /* DollarToday */ = {
+			isa = PBXGroup;
+			children = (
+				4DEF872F29F2C7C4007657EC /* DollarTodayApp.swift */,
+				4DEF873129F2C7C4007657EC /* ContentView.swift */,
+				4DEF873329F2C7C5007657EC /* Assets.xcassets */,
+				4DEF873829F2C7C5007657EC /* DollarToday.entitlements */,
+				4DEF873529F2C7C5007657EC /* Preview Content */,
+			);
+			path = DollarToday;
+			sourceTree = "<group>";
+		};
+		4DEF873529F2C7C5007657EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DEF873629F2C7C5007657EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DEF874329F2E0DF007657EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DEF874429F2E0DF007657EC /* WidgetKit.framework */,
+				4DEF874629F2E0DF007657EC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DEF874829F2E0DF007657EC /* DollarTodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4DEF874929F2E0DF007657EC /* DollarTodayWidget.swift */,
+				4DEF874B29F2E0DF007657EC /* DollarTodayWidget.intentdefinition */,
+				4DEF874C29F2E0E0007657EC /* Assets.xcassets */,
+				4DEF874E29F2E0E0007657EC /* Info.plist */,
+				4DEF874F29F2E0E0007657EC /* DollarTodayWidget.entitlements */,
+			);
+			path = DollarTodayWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DEF872B29F2C7C4007657EC /* DollarToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DEF873B29F2C7C5007657EC /* Build configuration list for PBXNativeTarget "DollarToday" */;
+			buildPhases = (
+				4DEF872829F2C7C4007657EC /* Sources */,
+				4DEF872929F2C7C4007657EC /* Frameworks */,
+				4DEF872A29F2C7C4007657EC /* Resources */,
+				4DEF875829F2E0E0007657EC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DEF875329F2E0E0007657EC /* PBXTargetDependency */,
+			);
+			name = DollarToday;
+			productName = DollarToday;
+			productReference = 4DEF872C29F2C7C4007657EC /* DollarToday.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DEF874129F2E0DF007657EC /* DollarTodayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DEF875529F2E0E0007657EC /* Build configuration list for PBXNativeTarget "DollarTodayWidgetExtension" */;
+			buildPhases = (
+				4DEF873E29F2E0DF007657EC /* Sources */,
+				4DEF873F29F2E0DF007657EC /* Frameworks */,
+				4DEF874029F2E0DF007657EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DollarTodayWidgetExtension;
+			productName = DollarTodayWidgetExtension;
+			productReference = 4DEF874229F2E0DF007657EC /* DollarTodayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DEF872429F2C7C4007657EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4DEF872B29F2C7C4007657EC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					4DEF874129F2E0DF007657EC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4DEF872729F2C7C4007657EC /* Build configuration list for PBXProject "DollarToday" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DEF872329F2C7C4007657EC;
+			productRefGroup = 4DEF872D29F2C7C4007657EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DEF872B29F2C7C4007657EC /* DollarToday */,
+				4DEF874129F2E0DF007657EC /* DollarTodayWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DEF872A29F2C7C4007657EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEF873729F2C7C5007657EC /* Preview Assets.xcassets in Resources */,
+				4DEF873429F2C7C5007657EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DEF874029F2E0DF007657EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEF874D29F2E0E0007657EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DEF872829F2C7C4007657EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEF873229F2C7C4007657EC /* ContentView.swift in Sources */,
+				4DEF873029F2C7C4007657EC /* DollarTodayApp.swift in Sources */,
+				4DEF875129F2E0E0007657EC /* DollarTodayWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DEF873E29F2E0DF007657EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEF875029F2E0E0007657EC /* DollarTodayWidget.intentdefinition in Sources */,
+				4DEF874A29F2E0DF007657EC /* DollarTodayWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DEF875329F2E0E0007657EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DEF874129F2E0DF007657EC /* DollarTodayWidgetExtension */;
+			targetProxy = 4DEF875229F2E0E0007657EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DEF873929F2C7C5007657EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DEF873A29F2C7C5007657EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4DEF873C29F2C7C5007657EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DollarToday/DollarToday.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DollarToday/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mine.test.DollarToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DEF873D29F2C7C5007657EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DollarToday/DollarToday.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DollarToday/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mine.test.DollarToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4DEF875629F2E0E0007657EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DollarTodayWidget/DollarTodayWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DollarTodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DollarTodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mine.test.DollarToday.DollarTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DEF875729F2E0E0007657EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DollarTodayWidget/DollarTodayWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DollarTodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DollarTodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mine.test.DollarToday.DollarTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DEF872729F2C7C4007657EC /* Build configuration list for PBXProject "DollarToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DEF873929F2C7C5007657EC /* Debug */,
+				4DEF873A29F2C7C5007657EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DEF873B29F2C7C5007657EC /* Build configuration list for PBXNativeTarget "DollarToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DEF873C29F2C7C5007657EC /* Debug */,
+				4DEF873D29F2C7C5007657EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DEF875529F2E0E0007657EC /* Build configuration list for PBXNativeTarget "DollarTodayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DEF875629F2E0E0007657EC /* Debug */,
+				4DEF875729F2E0E0007657EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DEF872429F2C7C4007657EC /* Project object */;
+}
