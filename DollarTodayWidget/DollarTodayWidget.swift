@@ -126,23 +126,48 @@ class DollarViewModel: ObservableObject {
 
 struct DollarTodayWidgetEntryView : View {
     var entry: DollarTodayEntry
-    
+    @Environment(\.widgetFamily) var widgetFamily
+
     var body: some View {
+        switch widgetFamily {
+        case .accessoryRectangular:
+            accessoryRectangularLockScreenWidget
+        default:
+            homeWidget
+        }
+
+    }
+
+    @ViewBuilder
+    var homeWidget: some View {
         ZStack {
             Image("dolar")
                 .padding(.bottom, 45.0)
             VStack(alignment: .center, spacing: 0) {
-                Text(String(format: "Dólar Blue",  entry.sell))
+                Text("Dólar Blue")
                     .font(.bold(.system(size: 16))())
                     .foregroundColor(.white)
                     .shadow(radius: 5)
-                Text(String(format: "$%.2f",  entry.sell))
+                Text(String(format: "$%.2f",  entry.sell).replacingOccurrences(of: ".", with: ","))
                     .font(.bold(.system(size: 36))())
                     .foregroundColor(.white)
                     .shadow(radius: 5)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("DarkBlue").opacity(0.4))
+        }
+    }
+
+    @ViewBuilder
+    var accessoryRectangularLockScreenWidget: some View {
+        ZStack {
+            AccessoryWidgetBackground()
+                .cornerRadius(12.0)
+            VStack {
+                Text("Dólar Blue")
+                    .font(.bold(.headline)())
+                Text(String(format: "$%.2f",  entry.sell).replacingOccurrences(of: ".", with: ","))
+            }
         }
     }
 }
@@ -161,6 +186,14 @@ struct DollarTodayWidget: Widget {
                     .systemSmall,
                     .systemMedium,
                     .systemLarge,
+                    .accessoryRectangular
                 ])
+    }
+}
+
+struct DollarTodayWidget_Preview: PreviewProvider {
+    static var previews: some View {
+        DollarTodayWidgetEntryView(entry: DollarTodayEntry(date: Date(), sell: 1.0, buy: 1.0, count: 2))
+            .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
     }
 }
